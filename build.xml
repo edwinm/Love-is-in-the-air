@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Compress maskr" default="buildjs1k">
+    <target name="buildjs1k">
+        <echo msg="Compress js1k..." />
+
+		<exec output="loveisintheair.min.js" error="compiler-err.txt" command="java -jar /Users/edwinm/Documents/Develop/Tools/ClosureCompiler/compiler.jar --js loveisintheair.js --compilation_level ADVANCED_OPTIMIZATIONS --warning_level VERBOSE --externs extern.js"/>
+        <filesize file="loveisintheair.min.js"/>
+    	<echo msg="Compressed filesize is ${filesize} bytes."/>
+
+    </target>
+    <target name="buildjs1k2">
+        <echo msg="Compress js1k2..." />
+
+		<exec output="loveisintheair2.min.js" error="compiler-err.txt" command="java -jar /Users/edwinm/Documents/Develop/Tools/ClosureCompiler/compiler.jar --js loveisintheair2.js --compilation_level ADVANCED_OPTIMIZATIONS --warning_level VERBOSE --externs extern.js"/>
+        <filesize file="loveisintheair2.min.js"/>
+    	<echo msg="Compressed filesize is ${filesize} bytes."/>
+
+    </target>
+</project>

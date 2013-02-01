@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>JS1k, 1k demo submission [ID]</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<canvas id="c"></canvas>
+		<script>
+			var b = document.body;
+			var c = document.getElementsByTagName('canvas')[0];
+			var a = c.getContext('2d');
+			document.body.clientWidth; // fix bug in webkit: http://qfox.nl/weblog/218
+		</script>
+		<script>
+// start of submission //
+c.width=1E3;c.height=250;a.font="16px arial";a.fillText("Love is in the air",0,16);d=a.getImageData(0,0,116,16);e=[50,0,99,0];f=[2,-2,5,1];q=[];for(o=0;o<6;o++){p=2<<o;r=q[o]=document.createElement("canvas");r.width=1E3;r.height=250;s=r.getContext("2d");s.fillStyle="#fff";for(t=0;t<18*p;t++){j=Math.random()*1E3;k=Math.random()*250;for(i=-1;i<2;i++){s.beginPath();s.arc(j+i*1E3,k,200/p,0,7);s.closePath();s.fill()}}}u=0;
+setInterval(function(){for(g=0;g<4;g++){e[g]+=w=f[g];if(e[g]<0||e[g]>99){f[g]=(Math.random()*0.8+0.4)*e[g]>0?-1:1;e[g]-=w}}a.globalAlpha=1;a.fillStyle="#06e";a.fillRect(0,0,1E3,250);a.globalAlpha=0.4;for(o=0;o<6;o++)for(v=0;v<2;v++)a.drawImage(q[o],~~(u*o/9%1E3)-1E3*v,0);u++;h=e[3];a.fillStyle="#e33";for(j=0;j<116;j++){h+=(e[~~(j/30)%4]-h)/10;for(k=0;k<16;k++)if(l=d.data[3+4*(j+116*k)]/5){a.globalAlpha=l*h/6E3+0.1;m=j*8+30.5;n=k*8+50+h/54*(k-23);a.beginPath();a.moveTo(m,n-1.5);x=[3,-3,6,0,0,6,-6,
+0,-3,-3];for(i=0;i<10;i+=2)a.lineTo(m+x[i],n+x[i+1]);a.closePath();a.fill()}}},50);
+// end of submission //
+		</script>
+	
+
+</body></html>
