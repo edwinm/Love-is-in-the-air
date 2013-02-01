@@ -1,15 +1,6 @@
-# Color animation jQuery plugin
+# Love is in the Air
 
-Enhances the jQuery animate function with color animations for fore- and backgrounds, borders etcetera.
+My submission for the JS1K competition.
 
-See [Color animation jQuery plugin](http://www.bitstorm.org/jquery/color-animation/) for more information.
+See the [Love is in the air js1k demo](http://www.bitstorm.org/weblog/2012-2/Love_is_in_the_air_js1k_demo.html) for more information.
 
-## More information
-
-Copyright 2012, 2013 Edwin Martin <edwin@bitstorm.org>
-
-License: MIT or GPL
-
-To get the jQuery plugins:
-
-`git clone https://github.com/edwinm/jQuery-plugins.git`
